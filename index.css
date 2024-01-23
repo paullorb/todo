@@ -1,3 +1,68 @@
+/* landing page style starts here*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../todo/images/bgImg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.lp-container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lp-h1 {
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 8rem;
+    color: #200344;
+    text-align: center;
+    padding-bottom: 0.4rem;
+    border-bottom: 7px solid #76B0DA;
+}
+
+.lpBtn {
+    all: unset;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 4rem;
+    color: #200344;
+    padding: 0.5rem 1rem;
+    transition: all 0.5 ease;
+    cursor: pointer;
+}
+
+.lpBtn:hover {
+    color: #76B0DA;
+}
+
+.lp-btnContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#lp-footer {
+    padding: 1rem 0.9rem;
+    background-color: #76B0DA;
+    color: #200344;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+/* this style (.lp-containerDisplay) is written here just for me to see better where i should put the footer morizz you can change it if its needed */
+.lp-containerDisplay {
+    height: 40vh;
+}
+
+/* landing page style ends here*/
+
 /* MORITZ CODE */
 
 
