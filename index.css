@@ -37,9 +37,7 @@ body {
     cursor: pointer;
 }
 
-.lpBtn:hover {
-    color: #76B0DA;
-}
+
 
 .lp-btnContainer {
     display: flex;
@@ -56,7 +54,7 @@ body {
     font-weight: 500;
 }
 
-/* this style (.lp-containerDisplay) is written here just for me to see better where i should put the footer morizz you can change it if its needed */
+/* this style (.lp-containerDisplay) is written here just for me to see better where i should put the footer moritz you can change it  or even delete it if its needed */
 .lp-containerDisplay {
     height: 40vh;
 }
