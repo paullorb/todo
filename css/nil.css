@@ -70,7 +70,23 @@
     color: #fff;
 }
 
+
 .nilAddBtn {
+    display: inline-block;
+    border: none;
+    outline: 2px solid #fff;
+    width: 3rem;
+    height: 3rem;
+    background-color: #0060BF;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nilEditBtn {
+    display: none;
     border: none;
     outline: 2px solid #fff;
     width: 3rem;
@@ -164,6 +180,14 @@
     border-radius: 50%;
     line-height: 28px;
     outline: 3px solid #DDDDDD;
+}
+
+.nilListContainer ul li span.ediSpan {
+    right: 36px;
+}
+
+.nilListContainer ul li span.ediSpan:hover {
+    background-color: #258D2D;
 }
 
 .nilListContainer ul li span:hover {
