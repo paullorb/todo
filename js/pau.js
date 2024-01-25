@@ -2,7 +2,6 @@
 const todoInput = document.querySelector('.pa_input');
 const todoButton = document.querySelector('.pa_button');
 const todoList = document.querySelector('.pa_list');
-const filterOption = document.querySelector('.pa_filter');
 
 // Functions
 
@@ -73,7 +72,7 @@ function deleteTodo(e) {
   }
   if (item.classList[0] === 'complete-btn') {
     const todo = item.parentElement;
-    todo.classList.toggle('completed');
+    todo.classList.toggle('pa_completed');
     console.log(todo);
   }
 }
