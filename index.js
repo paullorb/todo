@@ -1,3 +1,48 @@
+const PaulSectionInsideLPContainer = document.querySelector(".pau");
+const MoSectionInsideLPContainer = document.querySelector(".mo");
+const NiloSectionInsideLPContainer = document.querySelector(".nil");
+
+
+const focusMo = function () {
+    PaulSectionInsideLPContainer.style.display = 'none';
+    NiloSectionInsideLPContainer.style.display = 'none';
+    MoSectionInsideLPContainer.style.display = 'flex';
+    MoSectionInsideLPContainer.style.width ='100%'
+};
+
+const unfocusMo = function () {
+    PaulSectionInsideLPContainer.style.display = 'flex';
+    NiloSectionInsideLPContainer.style.display = 'flex';
+    MoSectionInsideLPContainer.style.width ='auto';
+};
+
+const focusPaul = function () {
+    MoSectionInsideLPContainer.style.display = 'none';
+    NiloSectionInsideLPContainer.style.display = 'none';
+    PaulSectionInsideLPContainer.style.display = 'flex';
+    PaulSectionInsideLPContainer.style.width ='100%'
+};
+
+const unfocusPaul = function () {
+    MoSectionInsideLPContainer.style.display = 'flex';
+    NiloSectionInsideLPContainer.style.display = 'flex';
+    PaulSectionInsideLPContainer.style.width ='auto';
+};
+
+const focusNilo = function () {
+    MoSectionInsideLPContainer.style.display = 'none';
+    NiloSectionInsideLPContainer.style.display = 'flex';
+    PaulSectionInsideLPContainer.style.display = 'none';
+    PaulSectionInsideLPContainer.style.width ='100%'
+};
+
+const unfocusNilo = function () {
+    MoSectionInsideLPContainer.style.display = 'flex';
+    PaulSectionInsideLPContainer.style.display = 'flex';
+    NiloSectionInsideLPContainer.style.width ='auto';
+};
+
+
 // Add List Item in the Work TDL-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 const moAddButtonWork = document.getElementById("moToDoDisplayFormWork");   // selects form element -> submit only works on the whole form not  just on the submit input 
