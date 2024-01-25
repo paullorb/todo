@@ -491,11 +491,18 @@ body {
     outline: 3px solid #DDDDDD;
 }
 
+.nilListContainer ul li span.ediSpan {
+    right: 36px;
+}
+
+.nilListContainer ul li span.ediSpan:hover {
+    background-color: #258D2D;
+}
+
 .nilListContainer ul li span:hover {
     background-color: #dc3545;
     color: #fff;
     outline: 3px solid #fff;
 }
-
 
 /* PAUL CODE */
