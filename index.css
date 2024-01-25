@@ -58,7 +58,7 @@ body {
 
 /* this style (.lp-containerDisplay) is written here just for me to see better where i should put the footer morizz you can change it if its needed */
 .lp-containerDisplay {
-    height: 100vh;
+    height: fit-content;
     display: flex;
     margin: 0 5%;
 }
@@ -86,7 +86,7 @@ body {
 
 #MoToDoContainer {
     padding: 2rem 1rem;
-    margin: 1rem 1rem;
+    margin: auto auto;
     height: fit-content;
     width: 100%;
 }
