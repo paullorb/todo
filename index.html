@@ -18,15 +18,86 @@
     </header>
     <main>
       <div class="lp-btnContainer">
-        <button id="lpBtnP" class="lpBtn">Paul</button>
-        <button id="lpBtnM" class="lpBtn">Moritz</button>
-        <button id="lpBtnN" class="lpBtn">Niloufar</button>
+        <button id="lpBtnP" class="lpBtn" onclick="focusPaul()" ondblclick="unfocusPaul()">Paul</button>
+        <button id="lpBtnM" class="lpBtn" onclick="focusMo()" ondblclick="unfocusMo()">Moritz</button>
+        <button id="lpBtnN" class="lpBtn" onclick="focusNilo()" ondblclick="unfocusNilo()">Niloufar</button>
       </div>
       <!--our Html codes are going to insert here-->
       <div class="lp-containerDisplay">
-        <section class="nil"></section>
-        <section class="mo"></section>
         <section class="pau"></section>
+        <section class="mo">
+
+          <div id="MoToDoContainer">
+            <section id="moSectionHeader" class="moSections">
+            
+              <h1 class="moHOnes">Moody's<br>To Do List</h1>
+            
+              <p class="moPs"> 
+                I see you - Feeling overwhelmed with all your uncompleted task's?!<br>
+                Not knowing where to start got you all moody eh? Don't worry I got just the right tool for you!<br>
+                <br>
+                With my To do list you actually get two list's - one for work related things and one for private ones.<br>
+                This will help you to use your hours wisely beacuse once you've wrote down what needs to be done<br>
+                you can immideatly see what you should focus on for the day. Hope this helps and you like it!<br>
+                <br>
+                sincerly Moody 
+              </p>
+            
+              <div class="moInstructionCont">
+              <p class="moPInstructions">  clicking <button class="moButtonDone"></button><br> will mark the task as done</p>
+            
+              <p class="moPInstructions">  clicking <button class="moButtonEdit"></button><br> will replace the text with whatever<br> characters are currently displayed in the Text Input</p>
+                
+              <p class="moPInstructions">  clicking <button class="moButtonDel"></button><br> will delete the task</p>
+            </div>
+            
+            </section>
+            
+            
+            
+            <section id="moSectionMain" class="moSections">
+            
+              <!-- Work -->
+              <div id="moToDoDisplayWork" class="moToDoDisplays">
+                <h2 class="moHTwos">Work</h2>
+                <form id="moToDoDisplayFormWork" class="moToDoDisplayForms">
+                  <input type="text" id="moToDoTextInputWork" class="moToDoTextInput">
+                  <input type="submit" id="moToDoSubInputWork" class="moToDoSubInput" value="Add">
+                </form>
+                <h3 class="moHThrees">Todays Tasks:</h3>
+                <ul id="moToDoDisplayListWork" class="moToDoDisplayLists">
+                </ul>
+              </div>
+            
+            <!-- Private -->
+            <div id="moToDoDisplayPrivate" class="moToDoDisplays">
+              <h2 class="moHTwos">Private</h2>
+              <form id="moToDoDisplayFormPrivate" class="moToDoDisplayForms">
+                <input type="text" id="moToDoTextInputPrivate" class="moToDoTextInput">
+                <input type="submit" id="moToDoSubInputPrivate" class="moToDoSubInput" value="Add">
+              </form>
+              <h3 class="moHThrees">Todays Tasks:</h3>
+              <ul id="moToDoDisplayListPrivate" class="moToDoDisplayLists">
+               
+
+
+          </ul>
+
+        </div>
+
+</section> 
+            
+            
+            <section id="moSectionFooter" class="moSections">
+            <h3 class="moHTwos">	&copy; 2024</h3>
+            <p class="moPFooter"> created by: </p>
+            <a class="moAs" href="https://github.com/Moody458"><img class="moGitImg" src="https://avatars.githubusercontent.com/u/153498819?v=4"> </a>
+            </section>
+            
+            </div>
+
+        </section>
+        <section class="nil"></section>
       </div>
       <!-- ends of our Html codes and the rest are landing page Html-->
        
