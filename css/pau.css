@@ -9,11 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
-header.pa_header {
-  font-size: 2rem;
-}
 
-header.pa_header,
 form.pa_form {
   min-height: 20vh;
   display: flex;
@@ -86,7 +82,7 @@ form.pa_form button:hover {
   pointer-events: none;
 }
 
-.fall {
+.pa_fall {
   transform: translateY(10rem) rotateZ(20deg);
   opacity: 0;
 }
@@ -106,28 +102,4 @@ select.pa_filter {
   box-shadow: none;
   border: 0 !important;
   background-image: none;
-}
-
-/* Custom Select */
-.pa_select {
-  margin: 1rem;
-  position: relative;
-  overflow: hidden;
-}
-select.pa_filter {
-  color: #ff6f47;
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
-  width: 12rem;
-}
-/* Arrow */
-.pa_select::after {
-  content: "\25BC";
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  background: #ff6f47;
-  cursor: pointer;
-  pointer-events: none;
 }
