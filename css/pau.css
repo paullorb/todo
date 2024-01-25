@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .pau {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(120deg, #6890e5 0%, #5bf5b4 100%);
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -24,13 +24,13 @@ form button.pa_button {
   background: white;
 }
 form button.pa_button {
-  color: #ff6f47;
+  color: gray;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form.pa_form button:hover {
-  background: #ff6f47;
+  background: red;
   color: white;
 }
 .pa_container {
@@ -63,7 +63,7 @@ form.pa_form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background: rgb(231, 56, 56);
   color: white;
   border: none;
   padding: 1rem;
@@ -71,7 +71,7 @@ form.pa_form button:hover {
   font-size: 1rem;
 }
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: rgb(94, 228, 77);
 }
 .todo-item {
   padding: 0rem 0.5rem;
