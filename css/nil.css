@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.nilContainer {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.nilFormContainer {
+    width: 100%;
+    padding: 2.5rem 1.875rem 0 2.5rem;
+    background: #0060BF;
+    border-bottom: #20bf00 1px solid;
+
+}
+
+.nilTodoApp {
+    width: 100%;
+    max-width: 33.75rem;
+    background: #fff;
+    margin: 6.25rem auto 1.25rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nilRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nilRow input:focus::placeholder {
+    color: transparent;
+}
+
+.nilRow select,
+.nilRow input {
+    padding: 1.6rem;
+    border: 1px solid;
+    outline: none;
+    flex: 1;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.nilRow select {
+
+    border-left: none;
+    cursor: pointer;
+}
+
+.nilRow select::after {
+    padding-right: 15px;
+}
+
+.nilRow select option {
+    color: #153677;
+    padding: 0.4rem;
+}
+
+.nilRow input::placeholder {
+    color: #fff;
+}
+
+.nilAddBtn {
+    border: none;
+    outline: 2px solid #fff;
+    width: 3rem;
+    height: 3rem;
+    background-color: #0060BF;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nilAddBtn:hover {
+    color: #0060BF;
+    background-color: #fff;
+    border: 2px solid #0060BF;
+}
+
+.nilBtnContainer {
+    height: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 13px;
+}
+
+.nilListContainer {
+    padding: 2.5rem 1.875rem 2.5rem 2.5rem;
+}
+
+.nilListContainer ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    padding: 0.7rem 0.5rem 0.7rem 3.1rem;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.nilListContainer ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+
+}
+
+.nilListContainer ul li.nilChecked {
+    color: #555;
+    text-decoration: line-through;
+    border-left: 7px solid #258D2D;
+    border-bottom: 1px solid #258D2D;
+}
+
+.nilListContainer ul li.nilChecked::before {
+    background-image: url(../images/checked.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nilListContainer ul li.nilNormal {
+    border-left: 7px solid #007bff;
+    border-bottom: 1px solid #007bff;
+}
+
+.nilListContainer ul li.nilImportant {
+    border-left: 7px solid #ffc107;
+    border-bottom: 1px solid #ffc107;
+}
+
+.nilListContainer ul li.nilUrgent {
+    border-left: 7px solid #dc3545;
+    border-bottom: 1px solid #dc3545;
+}
+
+.nilListContainer ul li span {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 28px;
+    height: 28px;
+    font-size: 22px;
+    color: #818282;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 28px;
+    outline: 3px solid #DDDDDD;
+}
+
+.nilListContainer ul li span:hover {
+    background-color: #dc3545;
+    color: #fff;
+    outline: 3px solid #fff;
+}

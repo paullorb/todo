@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/nil.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nilContainer">
+      <div class="nilTodoApp">
+        <div class="nilFormContainer">
+          <form action="" id="nilForm" class="nilRow">
+            <input
+              type="text"
+              id="nilInputBox"
+              placeholder="What do you want to do"
+            />
+            <div id="nilSelect" class="nilSelect">
+              <select name="todos" class="nilPriority">
+                <option value="nilNormal">Normal</option>
+                <option value="nilImportant">Important</option>
+                <option value="nilUrgent">Urgent</option>
+              </select>
+            </div>
+          </form>
+          <div class="nilBtnContainer">
+            <button type="submit" id="nilAdd" class="nilAddBtn">+</button>
+          </div>
+        </div>
+
+        <div class="nilListContainer">
+          <ul id="nilul">
+            <!--
+            <li class="nilChecked">task 1</li>
+            <li class="nilImportant">task 1</li>
+            <li class="nilErgent">task 1</li>
+            <li class="nilNormal">task 1</li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../js/nil.js"></script>
+  </body>
+</html>
