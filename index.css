@@ -37,6 +37,10 @@ body {
     cursor: pointer;
 }
 
+.lpBtn:hover {
+    color: #76B0DA;
+}
+
 
 
 .lp-btnContainer {
@@ -322,7 +326,7 @@ body {
 
 .nilContainer {
     width: 100%;
-    height: 100vh;
+
 
     padding: 10px;
 }
@@ -332,6 +336,8 @@ body {
     padding: 2.5rem 1.875rem 0 2.5rem;
     background: #0060BF;
     border-bottom: #20bf00 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 
 }
 
@@ -413,6 +419,10 @@ body {
 
 .nilListContainer {
     padding: 2.5rem 1.875rem 2.5rem 2.5rem;
+    border-right: 2px solid #76B0DA;
+    border-left: 2px solid #76B0DA;
+    border-bottom: 2px solid #76B0DA;
+    border-radius: 0 0 5px 5px;
 }
 
 .nilListContainer ul li {
