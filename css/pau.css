@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -93,7 +93,7 @@ form.pa_form button:hover {
 }
 
 /*CUSTOM SELECTOR */
-select.pa_filter {
+/* select.pa_filter {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -102,4 +102,4 @@ select.pa_filter {
   box-shadow: none;
   border: 0 !important;
   background-image: none;
-}
+} */ */
