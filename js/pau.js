@@ -118,108 +118,110 @@
 // todoButton.addEventListener('click', addTodo);
 // todoList.addEventListener('click', deleteTodo);
 
-
 // new Begin
 
 // HTML Selection
-const pSection = document.querySelector('.pau');                        // Create the section.pau_section
-
+const pSection = document.querySelector(".pau"); // Create the section.pau_section
 
 // HTML Creation
-const pInput = document.createElement('input');                            // Create the input.pau_input
-pInput.classList.add('pau_input');
-pInput.setAttribute('type', 'text');
-pInput.setAttribute('placeholder', 'Add a new task');
+const pInput = document.createElement("input"); // Create the input.pau_input
+pInput.classList.add("pau_input");
+pInput.setAttribute("type", "text");
+pInput.setAttribute("placeholder", "Add a new task");
 pSection.appendChild(pInput);
 
-const pButton = document.createElement('button');                         // Create the button.pau_button
-pButton.classList.add('pau_button');
-pButton.innerText = 'Add';
+const pButton = document.createElement("button"); // Create the button.pau_button
+pButton.classList.add("pau_button");
+pButton.innerText = "Add";
 pSection.appendChild(pButton);
 
-const pUl = document.createElement('ul');                                 // Create the ul.pau_list
-pUl.classList.add('pau_list');
+const pUl = document.createElement("ul"); // Create the ul.pau_list
+pUl.classList.add("pau_list");
 pSection.appendChild(pUl);
 
-
 // CSS Styling
-document.body.style.padding = '0';                                      // CSS Styling for the body
-document.body.style.margin = '0';
-document.body.style.boxSizing = 'border-box';
+document.body.style.padding = "0"; // CSS Styling for the body
+document.body.style.margin = "0";
+document.body.style.boxSizing = "border-box";
 
-pSection.style.display = 'flex';                                         // CSS Styling for the section.pau_section
-pSection.style.flexDirection = 'column';
-pSection.style.alignItems = 'center';
-pSection.style.width = '100%';
-pSection.style.background = 'linear-gradient(45deg, #ee7752 30%, #e73c7e 60%, #23a6d5 90%, #23d5ab 100%';
-pSection.style.backgroundSize = '400% 400%';
-pSection.style.padding = '2rem';
-pSection.style.boxSizing = 'border-box';
-pSection.style.height = '100vh';
-pSection.style.margin = '0 auto 0';
+pSection.style.display = "flex"; // CSS Styling for the section.pau_section
+pSection.style.flexDirection = "column";
+pSection.style.alignItems = "center";
+pSection.style.width = "100%";
+pSection.style.background =
+  "linear-gradient(45deg, #ee7752 30%, #e73c7e 60%, #23a6d5 90%, #23d5ab 100%";
+pSection.style.backgroundSize = "400% 400%";
+pSection.style.padding = "2rem";
+pSection.style.boxSizing = "border-box";
+pSection.style.height = "100vh";
+pSection.style.margin = "0 0 0";
 
-pInput.style.width = '300px';                                           // CSS Styling for the input.pau_input
-pInput.style.height = '30px';
-pInput.style.marginBottom = '10px';
-pInput.style.border = 'none';
-pInput.style.borderRadius = '5px';
-pInput.style.fontSize = '20px';
-pInput.style.textAlign = 'center';
+pInput.style.width = "300px"; // CSS Styling for the input.pau_input
+pInput.style.height = "30px";
+pInput.style.marginBottom = "10px";
+pInput.style.border = "none";
+pInput.style.borderRadius = "5px";
+pInput.style.fontSize = "20px";
+pInput.style.textAlign = "center";
 
-pButton.style.width = '300px';                                          // CSS Styling for the button.pau_button
-pButton.style.height = '30px';
-pButton.style.border = 'none';
-pButton.style.borderRadius = '1rem';
-pButton.style.marginBottom = '2rem';
+pButton.style.width = "300px"; // CSS Styling for the button.pau_button
+pButton.style.height = "30px";
+pButton.style.border = "none";
+pButton.style.borderRadius = "1rem";
+pButton.style.marginBottom = "2rem";
 
-pUl.style.listStyle = 'none';                                          // CSS Styling for the ul.pau_list
-pUl.style.width = '100%';
-pUl.style.display = 'flex';
-pUl.style.flexDirection = 'column';
-pUl.style.flexWrap = 'nowrap';
+pUl.style.listStyle = "none"; // CSS Styling for the ul.pau_list
+pUl.style.width = "100%";
+pUl.style.display = "flex";
+pUl.style.flexDirection = "column";
+pUl.style.flexWrap = "nowrap";
 
 // Functions
-const paCreateTodo = () => {                                          // Function to create a new todo
-  if (!pInput.value) return false;                                    // Added if statement
+const paCreateTodo = () => {
+  // Function to create a new todo
+  if (!pInput.value) return false; // Added if statement
 
-  const pLi = document.createElement('li');                           // create the li.pau_list_item
-  pLi.classList.add('pau_list_item');
+  const pLi = document.createElement("li"); // create the li.pau_list_item
+  pLi.classList.add("pau_list_item");
 
-  pLi.style.margin = '1rem auto 0';                                     // CSS Styling for the li
-  pLi.style.border = '0.2rem solid white';
-  pLi.style.color = 'white';
-  pLi.style.padding = '0.4rem';
-  pLi.style.borderRadius = '5px';
-  pLi.style.width = '70%';
-  pLi.style.borderCollapse = 'collapse';
-  pLi.style.fontSize = '20px';
-  pLi.style.textAlign = 'center';
-  pLi.style.fontFamily = 'Roboto, sans-serif';
-  pLi.style.display = 'flex';
-  pLi.style.justifyContent = 'flex-end';
-  pLi.style.gap = '0.2rem';
+  pLi.style.margin = "1rem auto 0"; // CSS Styling for the li
+  pLi.style.border = "0.2rem solid white";
+  pLi.style.color = "white";
+  pLi.style.padding = "0.4rem";
+  pLi.style.borderRadius = "5px";
+  pLi.style.width = "70%";
+  pLi.style.borderCollapse = "collapse";
+  pLi.style.fontSize = "20px";
+  pLi.style.textAlign = "center";
+  pLi.style.fontFamily = "Roboto, sans-serif";
+  pLi.style.display = "flex";
+  pLi.style.justifyContent = "flex-end";
+  pLi.style.gap = "0.2rem";
 
-  const pP = document.createElement('p');                              // create paragraph
-  pP.classList.add('pau_list_item_text');
-  pP.style.flexGrow = '10';
-  pP.style.textAlign = 'start';
-  pP.style.paddingLeft = '0.5rem';
+  const pP = document.createElement("p"); // create paragraph
+  pP.classList.add("pau_list_item_text");
+  pP.style.flexGrow = "10";
+  pP.style.textAlign = "start";
+  pP.style.paddingLeft = "0.5rem";
 
-  const completedButton = document.createElement('button');           // create completed button
-  completedButton.innerText = '😊';
+  const completedButton = document.createElement("button"); // create completed button
+  completedButton.innerText = "😊";
+  completedButton.style.padding = "0.5rem";
 
-  completedButton.addEventListener('click', () => {
-    pLi.style.textDecoration = 'line-through';
-    pLi.style.opacity = '0.5';
-    pLi.style.transition = 'all 0.8s ease';
+  completedButton.addEventListener("click", () => {
+    pLi.style.textDecoration = "line-through";
+    pLi.style.opacity = "0.5";
+    pLi.style.transition = "all 0.8s ease";
   });
 
-  const deleteButton = document.createElement('button');              // create delete button
-  deleteButton.innerText = '🥲';
+  const deleteButton = document.createElement("button"); // create delete button
+  deleteButton.innerHTML = "&#128465;";
+  deleteButton.style.padding = "0.5rem 0.75rem";
+  deleteButton.style.fontSize = "1rem";
 
-  deleteButton.addEventListener('click', () => {
-    pLi.style.opacity = '0';
-    pLi.style.transition = 'all 0.8s ease';
+  deleteButton.addEventListener("click", () => {
+    pLi.style.opacity = "0";
+    pLi.style.transition = "all 0.8s ease";
     setTimeout(() => {
       pLi.remove();
     }, 800);
@@ -229,24 +231,26 @@ const paCreateTodo = () => {                                          // Functio
   pUl.append(pLi);
   pLi.append(pP, completedButton, deleteButton);
 
-  pInput.value = '';
+  pInput.value = "";
 
   return true;
 };
 
-const addFavicon = () => {                                            // Function to add favicon
+const addFavicon = () => {
+  // Function to add favicon
   const pImg = new Image();
-  pImg.src = 'https://www.google.com/favicon.ico';
+  pImg.src = "https://www.google.com/favicon.ico";
   document.head.appendChild(pImg);
 };
 
 // Event Listeners
 
-pButton.addEventListener('click', paCreateTodo);                   // Event Listener for the button.pau_button
-pInput.addEventListener('keypress', event => {                     // Event Listener for the input.pau_input
+pButton.addEventListener("click", paCreateTodo); // Event Listener for the button.pau_button
+pInput.addEventListener("keypress", (event) => {
+  // Event Listener for the input.pau_input
   // event.preventDefault();
-  if (event.key === 'Enter') {
+  if (event.key === "Enter") {
     paCreateTodo();
   }
 });
-window.addEventListener('click', (addFavicon));                         // Event Listener for the window
+window.addEventListener("click", addFavicon); // Event Listener for the window

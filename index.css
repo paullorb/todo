@@ -1,623 +1,536 @@
 /* landing page style starts here*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    background-image: url(/images/bgImg.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
+  height: 100vh;
+  background-image: url(/images/bgImg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .lp-container {
-    min-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
+  min-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lp-h1 {
-    font-family: "Just Me Again Down Here", cursive;
-    font-size: 8rem;
-    color: #200344;
-    text-align: center;
-    padding-bottom: 0.4rem;
-    border-bottom: 7px solid #76B0DA;
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 8rem;
+  color: #200344;
+  text-align: center;
+  padding-bottom: 0.4rem;
+  border-bottom: 7px solid #76b0da;
 }
 
 .lpBtn {
-    all: unset;
-    font-family: "Just Me Again Down Here", cursive;
-    font-size: 4rem;
-    color: #200344;
-    padding: 0.5rem 1rem;
-    transition: all 0.5 ease;
-    cursor: pointer;
+  all: unset;
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 4rem;
+  color: #200344;
+  padding: 0.5rem 1rem;
+  transition: all 0.5 ease;
+  cursor: pointer;
 }
 
 .lpBtn:hover {
-    color: #76B0DA;
+  color: #76b0da;
 }
 
-
-
 .lp-btnContainer {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 3rem;
 }
 
 #lp-footer {
-    padding: 1rem 0.9rem;
-    background-color: #76B0DA;
-    color: #200344;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 500;
+  padding: 1rem 0.9rem;
+  background-color: #76b0da;
+  color: #200344;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin-top: 3rem;
 }
 
 /* this style (.lp-containerDisplay) is written here just for me to see better where i should put the footer moritz you can change it  or even delete it if its needed */
 .lp-containerDisplay {
-    height: fit-content;
-    display: flex;
-    margin: 0 32px;
-    gap: 20px;
+  max-height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 3rem;
+  gap: 20px;
 }
 
 .lp-containerDisplay .nil,
 .lp-containerDisplay .mo,
 .lp-containerDisplay .pau {
-    flex: 1;
-
-    /* Adjust the margin as needed */
-    border: solid 3px #200344;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  border: solid 3px #200344;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  filter: blur(0.2rem);
+  opacity: 0.2;
+  transition: filter 1s ease, opacity 1s ease;
 }
 
+.lp-containerDisplay .nil:hover,
+.lp-containerDisplay .mo:hover,
+.lp-containerDisplay .pau:hover {
+  opacity: 1;
+  filter: blur(0);
+}
+
+#lpBtnM {
+  margin-left: 7.5rem;
+}
 /* landing page style ends here*/
 
 /* MORITZ CODE */
 
 /*-------------------------------------------------------------------Sections                                               */
 .mo {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-
 #MoToDoContainer {
-    padding: 2rem 1rem;
-    margin: auto auto;
-    height: fit-content;
-    width: 100%;
+  padding: 2rem 1rem;
+  margin: auto auto;
+  height: fit-content;
+  width: 100%;
 }
 
 #moSectionHeader {
-    border-radius: 30px;
-    padding: 1rem 0;
-    text-align: center;
-    background: linear-gradient(80deg, rgba(218, 214, 33, 1) 0%, rgba(75, 131, 149, 1) 100%);
-    text-shadow: white 1px 1px;
+  border-radius: 30px;
+  padding: 1rem 0;
+  text-align: center;
+  background: linear-gradient(
+    80deg,
+    rgba(218, 214, 33, 1) 0%,
+    rgba(75, 131, 149, 1) 100%
+  );
+  text-shadow: white 1px 1px;
 }
 
 #moSectionMain {
-    margin: 2rem 0;
-    padding: 2rem 0;
-    /* border: solid green 1px; */
-    display: flex;
-    justify-content: space-around;
-    text-shadow: white 1px 1px;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  /* border: solid green 1px; */
+  display: flex;
+  justify-content: space-around;
+  text-shadow: white 1px 1px;
 }
 
 #moSectionFooter {
-    /* border: solid purple 1px; */
-    text-align: center;
+  /* border: solid purple 1px; */
+  text-align: center;
 }
 
 /*---------------------------------------------------------inside HeaderSection*/
 .moHOnes {
-    font-size: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .moPs {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
 }
 
 .moInstructionCont {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
 }
 
 .moPInstructions {
-    font-size: small;
-    font-weight: 600;
-
+  margin-top: 2rem;
+  font-size: small;
+  font-weight: 600;
 }
 
 /*---------------------------------------------------------inside MainSection                                    */
 #moToDoDisplayWork {
-    border: solid rgb(62, 185, 194) 5px;
-    border-radius: 30px;
-    background-color: hsla(195, 33%, 44%, 0.741);
-    height: fit-content;
-    margin: 0 1rem;
+  border: solid rgb(62, 185, 194) 5px;
+  border-radius: 30px;
+  background-color: hsla(195, 33%, 44%, 0.741);
+  height: fit-content;
+  margin: 0 1rem;
 }
 
 #moToDoDisplayPrivate {
-    border: solid rgb(218, 214, 33) 5px;
-    border-radius: 30px;
-    background-color: hsla(61, 78%, 33%, 0.741);
-    height: fit-content;
-    margin: 0 1rem;
+  border: solid rgb(218, 214, 33) 5px;
+  border-radius: 30px;
+  background-color: hsla(61, 78%, 33%, 0.741);
+  height: fit-content;
+  margin: 0 1rem;
 }
 
 /*--------------------------------------------------------inside FooterSection                                    */
 
 .moPFooter {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    margin-top: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  margin-top: 1rem;
 }
 
 .moGitImg {
-    max-height: 2rem;
-    max-width: 2rem;
-    border-radius: 50%;
+  max-height: 2rem;
+  max-width: 2rem;
+  border-radius: 50%;
 }
 
 /*--------------------------------------------------------inside ToDoDisplays                                    */
 /*----------------------both                                                               */
 .moToDoDisplays {
-    padding: 0.3rem 0.3rem;
+  padding: 0.3rem 0.3rem;
 }
 
 .moHTwos {
-    margin: 0.2rem 0;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.2rem 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .moToDoDisplayForms {
-    padding: 0 0.2rem;
+  padding: 0 0.2rem;
 }
 
 .moHThrees {
-    margin: 0.2rem 0;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.2rem 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .moToDoDisplayLists {
-    margin-block: 0;
-    padding-inline: 0;
-    list-style: none;
+  margin-block: 0;
+  padding-inline: 0;
+  list-style: none;
 }
 
 /*----------------------Buttons                                                              */
 .moCreatedListItemButtonContainer {
-    display: flex;
-    align-items: center;
-    margin-right: 0.3rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.3rem;
 }
 
 .moButtonDone {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    border: solid 1px green;
-    background-color: hsl(120, 61%, 56%);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: solid 1px green;
+  background-color: hsl(120, 61%, 56%);
+  cursor: pointer;
 }
 
 .moButtonEdit {
-    margin: 0 0.2rem;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    border: solid 1px royalblue;
-    background-color: hsl(225, 66%, 74%);
+  margin: 0 0.2rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: solid 1px royalblue;
+  background-color: hsl(225, 66%, 74%);
+  cursor: pointer;
 }
 
 .moButtonDel {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    border: solid 1px red;
-    background-color: hsl(0, 79%, 68%);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: solid 1px red;
+  background-color: hsl(0, 79%, 68%);
+  cursor: pointer;
+}
+
+.moToDoSubInput {
+  cursor: pointer;
 }
 
 /*----------------------workToDo                                                               */
 .moCreatedListItemWork {
-    display: flex;
-    height: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 2px rgb(89, 159, 182);
-    background-color: hsla(195, 53%, 79%, 0.74);
-    border-radius: 30px;
-    margin: 0.3rem 0;
-
+  display: flex;
+  height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px rgb(89, 159, 182);
+  background-color: hsla(195, 53%, 79%, 0.74);
+  border-radius: 30px;
+  margin: 0.3rem 0;
 }
 
 .moCreatedListItemWorkP {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 0.8rem;
-    margin-left: 0.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
 }
 
 #moToDoDisplayFormWork {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.2rem 0.2rem;
-    border: solid 2px rgb(89, 159, 182);
-    background-color: hsla(195, 53%, 79%, 0.74);
-    border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.2rem;
+  border: solid 2px rgb(89, 159, 182);
+  background-color: hsla(195, 53%, 79%, 0.74);
+  border-radius: 30px;
 }
 
-#moToDoDisplayFormWork>input {
-    max-width: 60%;
-    border: solid 2px rgb(89, 159, 182);
-    border-radius: 30px;
-    background-color: hsla(0, 0%, 100%, 0.74);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-small;
-    font-weight: 600;
+#moToDoDisplayFormWork > input {
+  max-width: 60%;
+  border: solid 2px rgb(89, 159, 182);
+  border-radius: 30px;
+  background-color: hsla(0, 0%, 100%, 0.74);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-small;
+  font-weight: 600;
 }
 
 #moToDoTextInputWork {
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    margin-left: 0.3rem;
-
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
 }
 
 /*----------------------PrivateToDo                                                               */
 .moCreatedListItemPrivate {
-    display: flex;
-    height: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 2px rgb(163, 161, 37);
-    background-color: hsla(61, 85%, 48%, 0.74);
-    border-radius: 30px;
-    margin: 0.3rem 0;
-
+  display: flex;
+  height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px rgb(163, 161, 37);
+  background-color: hsla(61, 85%, 48%, 0.74);
+  border-radius: 30px;
+  margin: 0.3rem 0;
 }
 
 .moCreatedListItemPrivateP {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 0.8rem;
-    margin-left: 0.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
 }
 
 #moToDoDisplayFormPrivate {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.2rem 0.2rem;
-    border: solid 2px rgb(163, 161, 37);
-    background-color: hsla(61, 85%, 48%, 0.74);
-    border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.2rem;
+  border: solid 2px rgb(163, 161, 37);
+  background-color: hsla(61, 85%, 48%, 0.74);
+  border-radius: 30px;
 }
 
-#moToDoDisplayFormPrivate>input {
-    max-width: 60%;
-    border: solid 2px rgb(163, 161, 37);
-    border-radius: 30px;
-    background-color: hsla(0, 0%, 100%, 0.74);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-small;
-    font-weight: 600;
+#moToDoDisplayFormPrivate > input {
+  max-width: 60%;
+  border: solid 2px rgb(163, 161, 37);
+  border-radius: 30px;
+  background-color: hsla(0, 0%, 100%, 0.74);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-small;
+  font-weight: 600;
 }
 
 #moToDoTextInputPrivate {
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    margin-left: 0.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
 }
 
 /* NILOUFAR CODE */
 
 .nilContainer {
-    width: 100%;
+  width: 100%;
 
-
-    padding: 10px;
+  padding: 10px;
 }
 
 .nilFormContainer {
-    width: 100%;
-    padding: 2.5rem 1.875rem 0 2.5rem;
-    background: #0060BF;
-    border-bottom: #20bf00 1px solid;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-
+  width: 100%;
+  padding: 2.5rem 1.875rem 0 2.5rem;
+  background: #0060bf;
+  border-bottom: #20bf00 1px solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .nilTodoApp {
-    width: 100%;
-    max-width: 33.75rem;
-    background: #fff;
-    margin: 6.25rem auto 1.25rem;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 33.75rem;
+  background: #fff;
+  margin: 6.25rem auto 1.25rem;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
 }
 
 .nilRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .nilRow input:focus::placeholder {
-    color: transparent;
+  color: transparent;
 }
 
 .nilRow select,
 .nilRow input {
-    padding: 1.6rem;
-    border: 1px solid;
-    outline: none;
-    flex: 1;
-    background: transparent;
-    color: #fff;
-    font-size: 1rem;
+  padding: 1.6rem;
+  border: 1px solid;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
 }
 
 .nilRow select {
-
-    border-left: none;
-    cursor: pointer;
+  border-left: none;
+  cursor: pointer;
 }
 
 .nilRow select::after {
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 .nilRow select option {
-    color: #153677;
-    padding: 0.4rem;
+  color: #153677;
+  padding: 0.4rem;
 }
 
 .nilRow input::placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 .nilAddBtn {
-    border: none;
-    outline: 2px solid #fff;
-    width: 3rem;
-    height: 3rem;
-    background-color: #0060BF;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 32px;
-    font-weight: 500;
-    cursor: pointer;
+  border: none;
+  outline: 2px solid #fff;
+  width: 3rem;
+  height: 3rem;
+  background-color: #0060bf;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .nilAddBtn:hover {
-    color: #0060BF;
-    background-color: #fff;
-    border: 2px solid #0060BF;
+  color: #0060bf;
+  background-color: #fff;
+  border: 2px solid #0060bf;
 }
 
 .nilBtnContainer {
-    height: 10px;
-    text-align: center;
-    position: relative;
-    bottom: 13px;
+  height: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 13px;
 }
 
 .nilListContainer {
-    padding: 2.5rem 1.875rem 2.5rem 2.5rem;
-    border-right: 2px solid #76B0DA;
-    border-left: 2px solid #76B0DA;
-    border-bottom: 2px solid #76B0DA;
-    border-radius: 0 0 5px 5px;
+  padding: 2.5rem 1.875rem 2.5rem 2.5rem;
+  border-right: 2px solid #76b0da;
+  border-left: 2px solid #76b0da;
+  border-bottom: 2px solid #76b0da;
+  border-radius: 0 0 5px 5px;
 }
 
 .nilListContainer ul li {
-    list-style: none;
-    font-size: 1.1rem;
-    padding: 0.7rem 0.5rem 0.7rem 3.1rem;
-    margin-bottom: 0.2rem;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
+  list-style: none;
+  font-size: 1.1rem;
+  padding: 0.7rem 0.5rem 0.7rem 3.1rem;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
 }
 
 .nilListContainer ul li::before {
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(../images/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 8px;
-    left: 8px;
-
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(../images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
 }
 
 .nilListContainer ul li.nilChecked {
-    color: #555;
-    text-decoration: line-through;
-    border-left: 7px solid #258D2D;
-    border-bottom: 1px solid #258D2D;
+  color: #555;
+  text-decoration: line-through;
+  border-left: 7px solid #258d2d;
+  border-bottom: 1px solid #258d2d;
 }
 
 .nilListContainer ul li.nilChecked::before {
-    background-image: url(../images/checked.png);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../images/checked.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .nilListContainer ul li.nilNormal {
-    border-left: 7px solid #007bff;
-    border-bottom: 1px solid #007bff;
+  border-left: 7px solid #007bff;
+  border-bottom: 1px solid #007bff;
 }
 
 .nilListContainer ul li.nilImportant {
-    border-left: 7px solid #ffc107;
-    border-bottom: 1px solid #ffc107;
+  border-left: 7px solid #ffc107;
+  border-bottom: 1px solid #ffc107;
 }
 
 .nilListContainer ul li.nilUrgent {
-    border-left: 7px solid #dc3545;
-    border-bottom: 1px solid #dc3545;
+  border-left: 7px solid #dc3545;
+  border-bottom: 1px solid #dc3545;
 }
 
 .nilListContainer ul li span {
-    position: absolute;
-    right: 0;
-    top: 6px;
-    width: 28px;
-    height: 28px;
-    font-size: 22px;
-    color: #818282;
-    text-align: center;
-    border-radius: 50%;
-    line-height: 28px;
-    outline: 3px solid #DDDDDD;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  font-size: 22px;
+  color: #818282;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 28px;
+  outline: 3px solid #dddddd;
 }
 
 .nilListContainer ul li span.ediSpan {
-    right: 36px;
+  right: 36px;
 }
 
 .nilListContainer ul li span.ediSpan:hover {
-    background-color: #258D2D;
+  background-color: #258d2d;
 }
 
 .nilListContainer ul li span:hover {
-    background-color: #dc3545;
-    color: #fff;
-    outline: 3px solid #fff;
-}
-
-
-
-/* PAUL CODE */
-
-
-.pau {
-    background-image: linear-gradient(120deg, #6890e5 0%, #5bf5b4 100%);
-    color: white;
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-form.pa_form {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-form input.pa_input,
-form button.pa_button {
-    padding: 0.5rem;
-    font-size: 2rem;
-    border: none;
-    background: white;
-}
-
-form button.pa_button {
-    color: gray;
-    background: #f7fffe;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-form.pa_form button:hover {
-    background: red;
-    color: white;
-}
-
-.pa_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pa_list {
-    min-width: 30%;
-    list-style: none;
-}
-
-.todo {
-    margin: 0.5rem;
-    background: white;
-    font-size: 1.5rem;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 1s ease;
-}
-
-.filter-todo {
-    padding: 1rem;
-}
-
-.todo li {
-    flex: 1;
-}
-
-.trash-btn,
-.complete-btn {
-    background: rgb(231, 56, 56);
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.complete-btn {
-    background: rgb(94, 228, 77);
-}
-
-.todo-item {
-    padding: 0rem 0.5rem;
-}
-
-.fa-trash,
-.fa-check {
-    pointer-events: none;
-}
-
-.pa_fall {
-    transform: translateY(10rem) rotateZ(20deg);
-    opacity: 0;
-}
-
-.pa_completed {
-    text-decoration: line-through;
-    opacity: 0.5;
+  background-color: #dc3545;
+  color: #fff;
+  outline: 3px solid #fff;
 }
 
 /*CUSTOM SELECTOR */
 select.pa_filter {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
 }
