@@ -121,125 +121,132 @@
 
 // new Begin
 
-// Select DOM
+// HTML Selection
+const pSection = document.querySelector('.pau');                        // Create the section.pau_section
+
 
 // HTML Creation
-const section = document.querySelector('.pau');                        // Create the section.pau_section
+const pInput = document.createElement('input');                            // Create the input.pau_input
+pInput.classList.add('pau_input');
+pInput.setAttribute('type', 'text');
+pInput.setAttribute('placeholder', 'Add a new task');
+pSection.appendChild(pInput);
 
-const input = document.createElement('input');                            // Create the input.pau_input
-input.classList.add('pau_input');
-input.setAttribute('type', 'text');
-input.setAttribute('placeholder', 'Add a new task');
-section.appendChild(input);
+const pButton = document.createElement('button');                         // Create the button.pau_button
+pButton.classList.add('pau_button');
+pButton.innerText = 'Add';
+pSection.appendChild(pButton);
 
-const button = document.createElement('button');                         // Create the button.pau_button
-button.classList.add('pau_button');
-button.innerText = 'Add';
-section.appendChild(button);
+const pUl = document.createElement('ul');                                 // Create the ul.pau_list
+pUl.classList.add('pau_list');
+pSection.appendChild(pUl);
 
-const ul = document.createElement('ul');                                 // Create the ul.pau_list
-ul.classList.add('pau_list');
-section.appendChild(ul);
 
 // CSS Styling
-
 document.body.style.padding = '0';                                      // CSS Styling for the body
 document.body.style.margin = '0';
 document.body.style.boxSizing = 'border-box';
 
-section.style.display = 'flex';                                         // CSS Styling for the section.pau_section
-section.style.flexDirection = 'column';
-section.style.alignItems = 'center';
-section.style.width = '100%';
-section.style.background = 'linear-gradient(45deg, #ee7752 30%, #e73c7e 60%, #23a6d5 90%, #23d5ab 100%';
-section.style.backgroundSize = '400% 400%';
-section.style.animation = 'Gradient 1s ease infinite';
-section.style.padding = '2rem';
-section.style.boxSizing = 'border-box';
-section.style.height = '100vh';
+pSection.style.display = 'flex';                                         // CSS Styling for the section.pau_section
+pSection.style.flexDirection = 'column';
+pSection.style.alignItems = 'center';
+pSection.style.width = '100%';
+pSection.style.background = 'linear-gradient(45deg, #ee7752 30%, #e73c7e 60%, #23a6d5 90%, #23d5ab 100%';
+pSection.style.backgroundSize = '400% 400%';
+pSection.style.padding = '2rem';
+pSection.style.boxSizing = 'border-box';
+pSection.style.height = '100vh';
+pSection.style.margin = '0 auto 0';
 
-input.style.width = '300px';                                           // CSS Styling for the input.pau_input
-input.style.height = '30px';
-input.style.marginBottom = '10px';
-input.style.border = 'none';
-input.style.borderRadius = '5px';
-input.style.fontSize = '20px';
-input.style.textAlign = 'center';
+pInput.style.width = '300px';                                           // CSS Styling for the input.pau_input
+pInput.style.height = '30px';
+pInput.style.marginBottom = '10px';
+pInput.style.border = 'none';
+pInput.style.borderRadius = '5px';
+pInput.style.fontSize = '20px';
+pInput.style.textAlign = 'center';
 
-button.style.width = '300px';                                          // CSS Styling for the button.pau_button
-button.style.height = '30px';
-button.style.border = 'none';
-button.style.borderRadius = '15px';
+pButton.style.width = '300px';                                          // CSS Styling for the button.pau_button
+pButton.style.height = '30px';
+pButton.style.border = 'none';
+pButton.style.borderRadius = '1rem';
+pButton.style.marginBottom = '2rem';
 
-ul.style.listStyle = 'none';                                          // CSS Styling for the ul.pau_list
-ul.style.width = '100%';
-ul.style.display = 'flex';
-ul.style.flexDirection = 'column';
-ul.style.flexWrap = 'nowrap';
+pUl.style.listStyle = 'none';                                          // CSS Styling for the ul.pau_list
+pUl.style.width = '100%';
+pUl.style.display = 'flex';
+pUl.style.flexDirection = 'column';
+pUl.style.flexWrap = 'nowrap';
 
 // Functions
-
 const paCreateTodo = () => {                                          // Function to create a new todo
-  if (!input.value) return false;                                     // Added if statement
+  if (!pInput.value) return false;                                    // Added if statement
 
-  const li = document.createElement('li');                            // create the li.pau_list_item
-  li.classList.add('pau_list_item');
+  const pLi = document.createElement('li');                           // create the li.pau_list_item
+  pLi.classList.add('pau_list_item');
 
-  li.style.margin = '3rem auto';                                    // CSS Styling for the li
-  li.style.border = '0.2rem solid white';
-  li.style.color = 'white';
-  li.style.padding = '0.4rem';
-  li.style.borderRadius = '5px';
-  li.style.width = '70%';
-  li.style.borderCollapse = 'collapse';
-  li.style.fontSize = '20px';
-  li.style.textAlign = 'center';
-  li.style.fontFamily = 'Roboto, sans-serif';
-  li.style.display = 'flex';
-  li.style.justifyContent = 'flex-end';
-  li.style.gap = '0.2rem';
+  pLi.style.margin = '1rem auto 0';                                     // CSS Styling for the li
+  pLi.style.border = '0.2rem solid white';
+  pLi.style.color = 'white';
+  pLi.style.padding = '0.4rem';
+  pLi.style.borderRadius = '5px';
+  pLi.style.width = '70%';
+  pLi.style.borderCollapse = 'collapse';
+  pLi.style.fontSize = '20px';
+  pLi.style.textAlign = 'center';
+  pLi.style.fontFamily = 'Roboto, sans-serif';
+  pLi.style.display = 'flex';
+  pLi.style.justifyContent = 'flex-end';
+  pLi.style.gap = '0.2rem';
 
-  const p = document.createElement('p');                              // create paragraph
-  p.classList.add('pau_list_item_text');
-  p.style.flexGrow = '10';
-  p.style.textAlign = 'start';
-  p.style.paddingLeft = '0.5rem';
+  const pP = document.createElement('p');                              // create paragraph
+  pP.classList.add('pau_list_item_text');
+  pP.style.flexGrow = '10';
+  pP.style.textAlign = 'start';
+  pP.style.paddingLeft = '0.5rem';
 
   const completedButton = document.createElement('button');           // create completed button
   completedButton.innerText = '😊';
 
   completedButton.addEventListener('click', () => {
-    li.style.textDecoration = 'line-through';
-    li.style.opacity = '0.5';
-    li.style.transition = 'all 0.8s ease';
+    pLi.style.textDecoration = 'line-through';
+    pLi.style.opacity = '0.5';
+    pLi.style.transition = 'all 0.8s ease';
   });
 
   const deleteButton = document.createElement('button');              // create delete button
   deleteButton.innerText = '🥲';
 
   deleteButton.addEventListener('click', () => {
-    li.style.opacity = '0';
-    li.style.transition = 'all 0.8s ease';
+    pLi.style.opacity = '0';
+    pLi.style.transition = 'all 0.8s ease';
     setTimeout(() => {
-      li.remove();
+      pLi.remove();
     }, 800);
   });
 
-  p.innerText = input.value;
-  ul.append(li);
-  li.append(p, completedButton, deleteButton);
+  pP.innerText = pInput.value;
+  pUl.append(pLi);
+  pLi.append(pP, completedButton, deleteButton);
 
-  input.value = '';
+  pInput.value = '';
 
-  return true; // Added return statement
+  return true;
+};
+
+const addFavicon = () => {                                            // Function to add favicon
+  const pImg = new Image();
+  pImg.src = 'https://www.google.com/favicon.ico';
+  document.head.appendChild(pImg);
 };
 
 // Event Listeners
 
-button.addEventListener('click', paCreateTodo);                   // Event Listener for the button.pau_button
-input.addEventListener('keypress', event => {
+pButton.addEventListener('click', paCreateTodo);                   // Event Listener for the button.pau_button
+pInput.addEventListener('keypress', event => {                     // Event Listener for the input.pau_input
   // event.preventDefault();
   if (event.key === 'Enter') {
     paCreateTodo();
   }
 });
+window.addEventListener('click', (addFavicon));                         // Event Listener for the window
