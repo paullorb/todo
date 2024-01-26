@@ -124,9 +124,7 @@
 // Select DOM
 
 // HTML Creation
-const section = document.createElement('section');                        // Create the section.pau_section
-section.classList.add('pau_section');
-document.body.appendChild(section);
+const section = document.querySelector('.pau');                        // Create the section.pau_section
 
 const input = document.createElement('input');                            // Create the input.pau_input
 input.classList.add('pau_input');
@@ -187,12 +185,12 @@ const paCreateTodo = () => {                                          // Functio
   const li = document.createElement('li');                            // create the li.pau_list_item
   li.classList.add('pau_list_item');
 
-  li.style.margin = '0.3rem auto';                                    // CSS Styling for the li
+  li.style.margin = '3rem auto';                                    // CSS Styling for the li
   li.style.border = '0.2rem solid white';
   li.style.color = 'white';
   li.style.padding = '0.4rem';
   li.style.borderRadius = '5px';
-  li.style.width = '20%';
+  li.style.width = '70%';
   li.style.borderCollapse = 'collapse';
   li.style.fontSize = '20px';
   li.style.textAlign = 'center';
