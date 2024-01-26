@@ -13,7 +13,7 @@ body {
 }
 
 .lp-container {
-    width: 940px;
+    min-width: 940px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,14 +62,15 @@ body {
 .lp-containerDisplay {
     height: fit-content;
     display: flex;
-    margin: 0 5%;
+    margin: 0 32px;
+    gap: 20px;
 }
 
 .lp-containerDisplay .nil,
 .lp-containerDisplay .mo,
 .lp-containerDisplay .pau {
     flex: 1;
-    margin: 30px;
+
     /* Adjust the margin as needed */
     border: solid 3px #200344;
     border-radius: 20px;
@@ -517,43 +518,47 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-  
-  form.pa_form {
+}
+
+form.pa_form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  form input.pa_input,
-  form button.pa_button {
+}
+
+form input.pa_input,
+form button.pa_button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background: white;
-  }
-  form button.pa_button {
+}
+
+form button.pa_button {
     color: gray;
     background: #f7fffe;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  form.pa_form button:hover {
+}
+
+form.pa_form button:hover {
     background: red;
     color: white;
-  }
-  .pa_container {
+}
+
+.pa_container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .pa_list {
+}
+
+.pa_list {
     min-width: 30%;
     list-style: none;
-  }
-  
-  .todo {
+}
+
+.todo {
     margin: 0.5rem;
     background: white;
     font-size: 1.5rem;
@@ -562,47 +567,51 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: all 1s ease;
-  }
-  .filter-todo {
+}
+
+.filter-todo {
     padding: 1rem;
-  }
-  .todo li {
+}
+
+.todo li {
     flex: 1;
-  }
-  
-  .trash-btn,
-  .complete-btn {
+}
+
+.trash-btn,
+.complete-btn {
     background: rgb(231, 56, 56);
     color: white;
     border: none;
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
-  }
-  .complete-btn {
+}
+
+.complete-btn {
     background: rgb(94, 228, 77);
-  }
-  .todo-item {
+}
+
+.todo-item {
     padding: 0rem 0.5rem;
-  }
-  
-  .fa-trash,
-  .fa-check {
+}
+
+.fa-trash,
+.fa-check {
     pointer-events: none;
-  }
-  
-  .pa_fall {
+}
+
+.pa_fall {
     transform: translateY(10rem) rotateZ(20deg);
     opacity: 0;
-  }
-  
-  .pa_completed {
+}
+
+.pa_completed {
     text-decoration: line-through;
     opacity: 0.5;
-  }
-  
-  /*CUSTOM SELECTOR */
-  select.pa_filter {
+}
+
+/*CUSTOM SELECTOR */
+select.pa_filter {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -611,5 +620,4 @@ body {
     box-shadow: none;
     border: 0 !important;
     background-image: none;
-  }
-
+}
